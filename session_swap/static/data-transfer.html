@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Move your data · SessionExchange</title><link rel="stylesheet" href="/data-transfer.css"><script src="/data-transfer.js" defer></script></head>
+<body><main><a href="/">SessionExchange</a><h1>Move your data</h1><p>Use this page on the old site to pause swaps and download a backup. On the new site, restore the backup, check the counts, then open the board.</p>
+<label for="token">Administrator password</label><input id="token" type="password" autocomplete="off" minlength="32" placeholder="SWAP_ADMIN_TOKEN from this site's settings">
+<section><h2>Check this board</h2><button id="status">Show record counts</button><pre id="counts" aria-live="polite">No information loaded.</pre></section>
+<section><h2>On the old site</h2><p>Pausing blocks new posts, acceptances, sign-ins and imports. Existing records remain saved.</p><button id="export">Pause board and download backup</button></section>
+<section><h2>On the new site</h2><p>Restore is allowed only on an empty board. The new board stays paused until you open it below.</p><label for="backup">Backup file (.json.gz, up to 3 MB)</label><input id="backup" type="file" accept=".gz,application/gzip"><button id="restore">Restore backup</button></section>
+<section><h2>Open this board</h2><p>Use this on the new site after checking the restored counts. Use it on the old site only if you abandon the transfer before students use the new site.</p><button id="activate">Open this board for students</button></section>
+<p id="message" role="status" aria-live="polite"></p><p class="muted">The password stays in this tab. Keep backups private: they contain student names, PGIDs and swap history.</p></main></body></html>

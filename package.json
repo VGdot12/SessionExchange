@@ -1,0 +1,13 @@
+{
+  "name": "sessionexchange",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/netlify/*.test.mjs tests/vercel/*.test.mjs"
+  }
+}
